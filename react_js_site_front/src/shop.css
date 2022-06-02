@@ -1,0 +1,25 @@
+.content_shop{
+	margin-top: 107px;
+	width: 100%;
+	/*clearfix - make float'ed elements count as in flow to fix parent height 0 when childrens are floating*/
+	overflow: hidden;
+	margin-bottom: 253px;
+}
+
+.content_shop>.title{
+	font-size: 33px;
+	margin-bottom: 49px;
+	text-align: left;
+}
+
+.content_shop>.shop_search_sidebar{
+	float: left;
+	margin-right: 35px;
+}
+
+.content_shop>.shop_search_results>.shop_search_elements{
+	display: grid;
+	grid-row-gap: 75px;
+	grid-column-gap: 24px;
+	grid-template-columns: auto auto auto;
+}

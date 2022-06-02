@@ -1,0 +1,33 @@
+
+.shop_latest{
+	margin-bottom: 253px; 
+}
+
+
+.shop_latest_header{
+	margin-top: 73px;
+	height: 34px;
+	position: relative;
+	margin-bottom: 39px;
+}
+.shop_latest_header>*{
+	display: inline-block;
+	vertical-align: middle;
+}
+.shop_latest_header>h2{
+	position: absolute;
+	left: 0px;
+	margin: 0;
+}
+.shop_latest_header>a{
+	position: absolute;
+	right: 0px;
+	line-height: 34px;
+}
+
+.shop_elements{
+	display: grid;
+	grid-row-gap: 92px;
+	grid-column-gap: 57px;
+	grid-template-columns: auto auto auto;
+}

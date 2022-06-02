@@ -1,0 +1,11 @@
+.rating_stars{
+
+}
+
+.rating_stars>.star{
+	margin-right: 10px;
+}
+
+.rating_stars>.star:last-of-type{
+	margin-right: 0px;
+}

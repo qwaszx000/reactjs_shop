@@ -1,0 +1,71 @@
+.double_range_input_container{
+	/*height: 20px;*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.double_range_input_container>.double_range_input{
+	position: relative;
+	height: 20px;
+}
+
+.double_range_input_container>.double_range_input>input[type="range"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: none;
+	pointer-events: none;
+	z-index: 3;
+	margin: 0;
+}
+
+.double_range_input_container>.double_range_input>input[type="range"]::-moz-range-track, .double_range_input>input[type="range"]::-webkit-slider-runnable-track{
+	background: none;
+	width: 100%;
+	height: 2px;
+}
+
+.double_range_input_container>.double_range_input>input[type="range"]::-moz-range-thumb, .double_range_input>input[type="range"]::-webkit-slider-thumb{
+	background-color: #000;
+	width: 2px;
+	height: 10px;
+	pointer-events: auto;
+	border: none;
+	cursor: pointer;
+}
+
+.double_range_input_container>.double_range_input>.track_display{
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	width:100%;
+	height: 2px;
+	background-color: #999;
+	z-index: 1;
+}
+
+.double_range_input_container>.double_range_input>.selected_range_display{
+	position: absolute;
+	left: var(--range_left_offset, 0px);
+	top: 50%;
+	transform: translateY(-50%);
+	width:var(--range_len, 100%);
+	height: 2px;
+	background-color: #000;
+	z-index: 2;
+}
+
+.double_range_input_container>.price_output{
+	color: #707070;
+	font-size: 14px;
+	float: left;
+}
+
+.double_range_input_container>.filter{
+	color: #A18A68;
+	font-size: 14px;
+	float: right;
+}

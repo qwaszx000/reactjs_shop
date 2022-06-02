@@ -1,0 +1,57 @@
+.footer{
+	color: #707070;
+}
+
+.footer>hr{
+	background-color: #D8D8D8;
+	border-color: #D8D8D8;
+	margin-bottom: 37px;
+}
+
+.footer_menu{
+	margin-bottom: 52px;
+	padding-bottom: 39px;
+}
+
+.footer_menu>span>*{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.menusDiv{
+	float: left;
+}
+
+.footer_menu>.menusDiv>h4{
+	margin-right: 41px;
+}
+
+.inputDiv{
+	float: right;
+}
+
+.footer_menu>.inputDiv>input{
+	border: 0;
+	border-bottom: #000 1px solid;
+	width: 396px;
+	height: 39px;
+}
+
+
+.footer_menu>.inputDiv>i{
+	margin-left: -21px;
+	pointer-events: none;
+}
+
+.footer_about>span{
+	float:left;
+}
+
+.footer_about>i{
+	margin-left: 30px;
+	float: right;
+}
+
+.footer_about>i:hover{
+	color: #000;
+}

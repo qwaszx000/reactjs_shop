@@ -1,0 +1,67 @@
+@font-face{
+	font-family: 'AllertaStencil';
+	src: url('./AllertaStencil-Regular.ttf');
+}
+@font-face{
+	font-family: 'DMSans-Regular';
+	src: url('./DMSans-Regular.ttf');
+}
+@font-face{
+	font-family: 'DMSans-Bold';
+	src: url('./DMSans-Bold.ttf');
+}
+
+
+body{
+	font-family: 'DMSans-Regular';
+	background-color: #FFF;
+	margin: 0;
+}
+
+.root{
+	padding-left: 96px;
+	padding-right: 96px;
+	width: auto;
+}
+
+.root>*{
+	width: 1248px;
+}
+
+
+
+/*UTILS*/
+
+.text_black{
+	color: #000;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.hover_bottom_anim::after{
+	content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.hover_bottom_anim:hover::after {
+    width: 100%;
+}
+
+.hover_bottom_anim.active::after{
+    width: 100%;
+}
+
+a{
+	color: #707070;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #000;
+}

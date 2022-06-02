@@ -1,0 +1,76 @@
+.product_info_toggler{
+	text-align: left;
+}
+
+.product_info_toggler>.toggler_header{
+
+}
+
+.product_info_toggler>.toggler_header>h4{
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+	color: #707070;
+	font-size: 20px;
+	margin-right: 96px;
+}
+
+.product_info_toggler>.toggler_header>h4:last-of-type{
+	margin-right: 0px;
+}
+
+.product_info_toggler>.toggler_header>h4:hover{
+	color: #000;
+}
+
+.product_info_toggler>.toggler_header>h4::after{
+	display: block;
+	content: '';
+	width: 0px;
+	height: 1px;
+	background: #000 center;
+	transition: width 0.3s;
+	position: relative;
+	bottom: -41px;
+}
+
+.product_info_toggler>.toggler_header>h4:hover::after{
+	width: 100%;
+}
+
+.product_info_toggler>.toggler_header>h4.active{
+	color: #000;
+}
+
+.product_info_toggler>.toggler_header>h4.active::after{
+	width: 100%;
+}
+
+.product_info_toggler>.toggler_header>hr{
+	display: block;
+	height: 1px;
+	width: 100%;
+	background-color: #D8D8D8;
+	border: 0;
+	margin: 0;
+	margin-top: 40px;
+	margin-bottom: 46px;
+}
+
+.product_info_toggler>.toggler_body{
+	position: relative;
+	width: 100%;
+	height: var(--body_height, 50px);
+}
+
+.product_info_toggler>.toggler_body>div{
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.product_info_toggler>.toggler_body>div.active{
+	visibility: visible;
+}
