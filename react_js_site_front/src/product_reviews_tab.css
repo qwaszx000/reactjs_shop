@@ -1,0 +1,15 @@
+.reviews_tab_container{
+	width: 100%;
+}
+
+.reviews_tab_container>span{
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6%;
+	width: 47%;
+}
+
+.reviews_tab_container>span:last-of-type{
+	margin: 0;
+}

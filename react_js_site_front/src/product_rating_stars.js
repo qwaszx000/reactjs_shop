@@ -6,19 +6,21 @@ import './product_rating_stars.css';
 export class ProductRatingStars extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {full: this.props.full, empty: (this.props.stars - this.props.full)};
 	}
 
 	render(){
 
+		let full_stars = Number(this.props.full);
+		let empty_stars = Number(this.props.stars) - full_stars;
+
 		const stars = [];
 
-		for(let i=0;i<Number(this.state.full);i++){
-			stars.push(<img className="star" id={i} src="/full_star.png" onMouseOver={this.props.onMouseOverStar}/>);
+		for(let i=0;i<full_stars;i++){
+			stars.push(<img className="star" id={i} src="/full_star.png" onMouseOver={this.props.onMouseOverStar} onClick={this.props.onStarClick}/>);
 		}
 
-		for(let i=0;i<Number(this.state.empty);i++){
-			stars.push(<img className="star" id={this.props.full + i} src="/empty_star.png" onMouseOver={this.props.onMouseOverStar}/>);
+		for(let i=0;i<empty_stars;i++){
+			stars.push(<img className="star" id={full_stars + i} src="/empty_star.png" onMouseOver={this.props.onMouseOverStar} onClick={this.props.onStarClick}/>);
 		}
 
 		return(

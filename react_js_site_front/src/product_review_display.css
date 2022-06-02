@@ -1,0 +1,45 @@
+.review_display{
+	margin-bottom: 26px;
+}
+
+.review_display:last-of-type{
+	margin-bottom: 0;
+}
+
+.review_display>.heading{
+	margin-bottom: 20px;
+}
+
+.review_display>.heading>*{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+}
+
+.review_display>.heading>h3{
+	color: #000;
+	font-size: 20px;
+	margin-right: 16px;
+}
+
+.review_display>.heading>label{
+	color: #707070;
+	font-size: 14px;
+}
+
+.review_display>.stars{
+	margin-bottom: 31px;
+}
+
+.review_display>p{
+	color: #707070;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+.review_display>hr{
+	height: 1px;
+	background-color: #D8D8D8;
+	margin: 0;
+	border: 0;
+}

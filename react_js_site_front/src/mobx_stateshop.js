@@ -34,7 +34,11 @@ class MobxProductsStateStore{
 				img: "earring" + i + ".png",
 				name: "Earring " + i,
 				text: "Text Earring " + i,
-				cost_text: "100$"
+				cost_text: "100$",
+				reviews: [
+					{name: "Person1", stars: 4, date_str: "7 May, 2020", text: "Review text 1"},
+					{name: "Person2", stars: 3, date_str: "6 May, 2020", text: "Review text 2"}
+				]
 			});
 		}
 		this._products = tmp_products;
@@ -51,13 +55,5 @@ export class ProductsStateStore{
 			ProductsStateStore.state_store = new MobxProductsStateStore();
 			return ProductsStateStore.state_store;
 		}
-	}
-
-	static stateStoreProductsToNormal(store_products){
-		let products = [];
-		store_products.map((el) => {
-			products.push(el);
-		});
-		return products;
 	}
 }

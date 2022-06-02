@@ -7,6 +7,8 @@ import {ProductsStateStore} from './mobx_stateshop.js';
 import {ProductImagesDisplayer} from './product_images_displayer.js';
 import {ProductRatingStars} from './product_rating_stars.js';
 import {ProductInfoToggler} from './product_info_toggler.js';
+import {ProductReviewsTab} from './product_reviews_tab.js';
+import {SimilarProducts} from './similar_products.js';
 
 import './product_page.css';
 
@@ -60,7 +62,7 @@ class ProductPage extends React.Component{
 					<h4 className="categories">Categories:<label>Fashion, Style</label></h4>
 				</div>
 				<div className="additional_container">
-					<ProductInfoToggler headers={["Description", "Additional information", "Reviews(0)"]}>
+					<ProductInfoToggler headers={["Description", "Additional information", "Reviews(" + ProductsStateStore.getStateStore().products[this.props.params.product_id].reviews.length + ")"]}>
 						<div className="description_info_tab">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 						</div>
@@ -69,11 +71,14 @@ class ProductPage extends React.Component{
 							<p><h4>Colours:</h4><label>Black, White, Brown</label></p>
 							<p><h4>Material:</h4><label>Metal</label></p>
 						</div>
-						<div className="reviews_tab"></div>
+						<div className="reviews_tab">
+							<ProductReviewsTab product_id={this.props.params.product_id}/>
+						</div>
 					</ProductInfoToggler>
 				</div>
-				<div className="similar_items_container">
-					<h4>Similar Items</h4>
+				<div className="similar_items_part">
+					<h3>Similar Items</h3>
+					<SimilarProducts product_id={this.props.params.product_id}/>
 				</div>
 			</div>
 		);

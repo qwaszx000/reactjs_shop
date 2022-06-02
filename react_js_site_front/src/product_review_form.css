@@ -1,0 +1,121 @@
+.product_review_form{
+
+}
+
+.product_review_form>h3{
+	margin-bottom: 26px;
+	color: #000;
+	font-size: 20px;
+}
+
+.product_review_form>label{
+	color: #707070;
+	font-size: 13px;
+}
+
+.product_review_form>.textarea_input{
+	margin-bottom: 50px;
+	margin-top: 61px;
+	width: 100%;
+}
+
+.product_review_form>.textarea_input>textarea{
+	height: 78px;
+	border: 0;
+	border-bottom: #D8D8D8 1px solid;
+	width: 100%;
+}
+
+.product_review_form>.text_input{
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.product_review_form>.text_input>input{
+	border: 0;
+	border-bottom: #D8D8D8 1px solid;
+	height: 30px;
+	width: 100%;
+}
+
+.product_review_form>.text_input:last-of-type{
+	margin-bottom: 27px;
+}
+
+.product_review_form>.save_info_checkbox{
+	margin-bottom: 53px;
+	width: 100%;
+}
+
+.product_review_form>.save_info_checkbox>*{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.product_review_form>.save_info_checkbox>input{
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	border: #000 1px solid;
+	margin: 0;
+	padding: 0;
+	margin-right: 8px;
+	position: relative;
+}
+
+.product_review_form>.save_info_checkbox>input.checked::after{
+	content: '';
+
+	width: 10px;
+	height: 10px;
+
+	border-bottom: #000 2px solid;
+	border-right: #000 2px solid;
+
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.product_review_form>.save_info_checkbox>label{
+	color: #707070;
+	font-size: 12px;
+}
+
+.product_review_form>.stars_rating_input{
+	margin-bottom: 48px;
+	width: 100%;
+}
+
+.product_review_form>.stars_rating_input>label{
+	color: #707070;
+	font-size: 14px;
+}
+
+.product_review_form>.stars_rating_input>.rating_stars{
+	margin-top: 19px;
+	cursor: pointer;
+}
+
+.product_review_form>.submit_btn{
+	background-color: #000;
+	border: #000 1px solid;
+	border-radius: 4px;
+	width: 121px;
+	height: 51px;
+
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.product_review_form>.submit_btn:hover{
+	background-color: #FFF;
+	color: #000;
+}

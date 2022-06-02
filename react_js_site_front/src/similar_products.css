@@ -1,0 +1,17 @@
+.similar_container{
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.similar_container>.shop_similar_elements{
+	display: flex;
+	flex-direction: row;
+}
+
+.similar_container>.shop_similar_elements>.shop_similar_element{
+	margin-right: 54px;
+}
+
+.similar_container>.shop_similar_elements>.shop_similar_element:last-of-type{
+	margin-right: 0px;
+}

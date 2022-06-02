@@ -2,7 +2,7 @@ import React from 'react';
 import {observer} from 'mobx-react';
 
 import {ProductsStateStore} from './mobx_stateshop.js';
-import {ShopElement, ShopSearchElement} from './shop_element.js';
+import {ShopElement, ShopSearchElement, ShopSimilarElement} from './shop_element.js';
 
 
 export const ShopGrid = observer(class ShopGrid extends React.Component{
@@ -34,3 +34,19 @@ export const ShopSearchGrid = observer(class ShopSearchGrid extends React.Compon
 		)
 	}
 });
+
+export const ShopSimilarGrid = observer(class ShopSimilarGrid extends React.Component{
+	constructor(props){
+		super(props);
+	}
+	render(){
+		return (
+			<div className="shop_similar_elements">
+				{this.props.products.map((el, index) => (
+					<ShopSimilarElement info={el} index={index}/>
+				))}
+			</div>
+		)
+	}
+});
+

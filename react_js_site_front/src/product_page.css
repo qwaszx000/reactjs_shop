@@ -178,7 +178,35 @@
 	clear: left;
 }
 
-.product_page>.similar_items_container{
+.product_page>.additional_container .description_info_tab{
+	font-size: 16px;
+	color: #707070;
+}
+
+.product_page>.additional_container .additional_info_tab>p{
+	font-size: 16px;
+}
+
+.product_page>.additional_container .additional_info_tab>p>*{
+	display: inline-block;
+}
+
+.product_page>.additional_container .additional_info_tab>p>h4{
+	color: #000;
+	margin-right: 14px;
+}
+
+.product_page>.additional_container .additional_info_tab>p>label{
+	color: #707070;
+}
+
+.product_page>.similar_items_part{
 	margin-top: 80px;
 	clear: left;
+}
+
+.product_page>.similar_items_part>h3{
+	text-align: left;
+	font-size: 26px;
+	margin-bottom: 56px;
 }

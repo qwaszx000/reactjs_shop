@@ -99,3 +99,53 @@
 .shop_search_element>.action_icons>i:last-of-type{
 	margin-right: 0px;
 }
+
+/*Shop similar element*/
+
+.shop_similar_element{
+	width: 380px;
+	margin: 0;
+	text-align: left;
+	position: relative;
+}
+
+.shop_similar_element>a>img{
+	width: 380px;
+	height: 380px;
+	transition: 0.3s;
+	z-index: 3;
+	position: relative;
+}
+
+.shop_similar_element:hover>a>img{
+	opacity: 0.3;
+	z-index: 1;
+}
+
+.shop_similar_element>a>.name{
+	color: #000;
+	font-size: 20px;
+	margin-top: 31px;
+	margin-bottom: 26px;
+}
+
+.shop_similar_element>a>.cost_text{
+	color: #A18A68;
+	font-size: 20px;
+	margin: 0;
+}
+
+.shop_similar_element>.action_icons{
+	position: absolute;
+	top: 190px; /*half of img*/
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 2;
+}
+
+.shop_similar_element>.action_icons>i{
+	margin-right: 30px;
+}
+.shop_similar_element>.action_icons>i:last-of-type{
+	margin-right: 0px;
+}
