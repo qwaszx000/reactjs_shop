@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './footer.css';
 
 export class Footer extends React.Component{
@@ -8,7 +9,7 @@ export class Footer extends React.Component{
 				<hr/>
 				<div className="footer_menu">
 					<span className="menusDiv">
-						<h4 className="clickable hover_bottom_anim">CONTACT</h4>
+						<h4 className="clickable hover_bottom_anim"><Link to="/contact">CONTACT</Link></h4>
 						<h4 className="clickable hover_bottom_anim">TERMS OF SERVICE</h4>
 						<h4 className="clickable hover_bottom_anim">SHIPPING AND RETURNS</h4>
 					</span>

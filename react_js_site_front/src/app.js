@@ -6,6 +6,7 @@ import {AppWrapper} from './app_wrapper.js';
 import {ShopMain} from './shop.js';
 import {MainPageContent} from './main_page.js';
 import {ProductPageWrapped} from './product_page.js';
+import {ContactFormPage} from './contact_form_page.js';
 import './styles.css';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 					<Route index element={<MainPageContent/>}/>
 					<Route path="shop" element={<ShopMain/>}/>
 					<Route path="product/:product_id" element={<ProductPageWrapped/>}/>
+					<Route path="contact" element={<ContactFormPage/>}/>
 				</Route>
 			</Routes>
 		</BrowserRouter>

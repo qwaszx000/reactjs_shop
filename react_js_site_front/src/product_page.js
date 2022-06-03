@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link} from 'react-router-dom';
 
 import {UseParamsComponentWrapper} from './useparams_component_wrapper.js';
 import {ProductsStateStore} from './mobx_stateshop.js';
@@ -23,15 +24,25 @@ class ProductPage extends React.Component{
 	constructor(props){
 		super(props);
 
-		this.state = {product_counter_value: 1};
+		this.state = {product_counter_value: 1, recently_added_to_cart: false};
 
 		this.onMinusClick = this.onMinusClick.bind(this);
 		this.onPlusClick = this.onPlusClick.bind(this);
+		this.onAddToCart = this.onAddToCart.bind(this);
 	}
 
 	render(){
 		return(
 			<div className="product_page">
+				{this.state.recently_added_to_cart && (
+					<div className="added_to_cart_message">
+						<div className="ok_icon">
+							<div></div>
+						</div>
+						<label>The item added to your Shopping bag.</label>
+						<Link to="/cart" className="cart_link">VIEW CART</Link>
+					</div>)
+				}
 				<div className="image_displayer_container">
 					<ProductImagesDisplayer images={[ProductsStateStore.getStateStore().products[this.props.params.product_id].img]}/>
 				</div>
@@ -49,7 +60,7 @@ class ProductPage extends React.Component{
 							<span className="value"><label>{this.state.product_counter_value}</label></span>
 							<span className="plus" onClick={this.onPlusClick}><label>+</label></span>
 						</div>
-						<button>ADD TO CART</button>
+						<button onClick={this.onAddToCart}>ADD TO CART</button>
 					</div>
 					<div className="like_and_contact">
 						<i className="fa fa-heart-o fa-lg"></i>
@@ -97,6 +108,12 @@ class ProductPage extends React.Component{
 	onPlusClick(event){
 		this.setState((state) => {
 			return {product_counter_value: state.product_counter_value + 1};
+		});
+	}
+
+	onAddToCart(event){
+		this.setState({
+			recently_added_to_cart: true
 		});
 	}
 
