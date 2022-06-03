@@ -4,4 +4,3 @@
 ![Shop](screenshots/screenshot_shop_page.png)
 ![Product](screenshots/screenshot_product_page.png)
 
-Test
