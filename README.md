@@ -3,4 +3,5 @@
 ![Main](screenshots/screenshot_main_page.png)
 ![Shop](screenshots/screenshot_shop_page.png)
 ![Product](screenshots/screenshot_product_page.png)
+![Sign-in](screenshots/screenshot_sign_in.png)
 

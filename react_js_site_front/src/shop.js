@@ -17,7 +17,6 @@ export class ShopMain extends React.Component{
 				<h2 className="title">Shop The Latest</h2>
 				<div class="shop_search_sidebar">
 					<ShopSearchMenu/>
-					<button onClick={this.letsTry}>Remove</button>
 				</div>
 				<div class="shop_search_results">
 					<ShopSearchGrid/>
@@ -26,7 +25,4 @@ export class ShopMain extends React.Component{
 		);
 	}
 
-	letsTry(){
-		ProductsStateStore.getStateStore().removeProduct(0);
-	}
 }
